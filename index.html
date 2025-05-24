@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, Anjaneya!</h1>
-  <button onclick="sayHello()">Click me</button>
+  <h1>Let's Play a Quiz!</h1>
+  <div id="quiz-container">
+    <div class="question">
+      <label>1. What is the capital of India?</label><br>
+      <input type="text" id="q1" />
+    </div>
+    <div class="question">
+      <label>2. Who was the first emperor of China?</label><br>
+      <input type="text" id="q2" />
+    </div>
+    <div class="question">
+      <label>3. What is the color of the sky on a clear day?</label><br>
+      <input type="text" id="q3" />
+    </div>
+    <div class="question">
+      <label>4. How many legs does a spider have?</label><br>
+      <input type="text" id="q4" />
+    </div>
+    <div class="question">
+      <label>5. What do plants need to make food?</label><br>
+      <input type="text" id="q5" />
+    </div>
+    <button onclick="checkAnswers()">Submit</button>
+    <div id="result" class="result"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
